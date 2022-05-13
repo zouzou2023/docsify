@@ -1,2 +1,2 @@
 -   [首页](/)
-- [mybatis](文档/mybatis)
+- [java面试基础](文档/mybatis)
