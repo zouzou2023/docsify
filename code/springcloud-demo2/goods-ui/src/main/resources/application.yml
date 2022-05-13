@@ -1,0 +1,10 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: goods-ui
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka

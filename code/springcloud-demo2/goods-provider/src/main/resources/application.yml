@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: goods-provider
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db_school?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.qianfeng.goodscommons.pojo
+
+#指定当前服务注册的 ‘服务注册发现中心’的地址
+eureka:
+  client:
+    service-url:
+      defaultzone: http://localhost:8761/eureka
+
+
